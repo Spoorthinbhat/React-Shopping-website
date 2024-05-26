@@ -7,13 +7,9 @@ const Footer = () => {
   return (
     <div className="Footer">
       <div className="foot1">
-        <div className="footal">
-          <div className="foot2">
-            <Online></Online>
-            <Support></Support>
-          </div>
-          <Cpolicy></Cpolicy>
-        </div>
+        <Online></Online>
+        <Support></Support>
+        <Cpolicy></Cpolicy>
       </div>
       <div className="foot">
         <Subscribe></Subscribe>

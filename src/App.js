@@ -1,10 +1,14 @@
 import "./App.css";
-import Footer from "./Footer";
+// import Footer from "./Footer";
+// import Header from "./Header";
+import Photocard from "./Components/photocard";
 
 function App() {
   return (
     <div className="App">
-      <Footer></Footer>
+      {/* <Header></Header>
+      <Footer></Footer> */}
+      <Photocard></Photocard>
     </div>
   );
 }
