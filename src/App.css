@@ -1,38 +1,140 @@
-.App {
-  text-align: center;
+* {
+  padding: 0px;
+  font-size: 1em;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  text-decoration: none;
+  color: black;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a:hover {
+  text-decoration: underline;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.heading {
+  font-weight: 800;
+  font-size: 1.3em;
+}
+.Footer {
+  display: Flex;
+  font-size: 1.3em;
+  border: 2px red solid;
+  min-width: 300px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* margin: 0 4em 0 4em; */
+  background-color: #bfd7ed;
+  width: 100vw;
+  padding: 1em;
+  box-sizing: border-box;
+  /* flex-direction: column; */
+}
+.footal {
+  flex-grow: 1;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.Online {
+  display: inline-block;
+}
+#facebook {
+  color: #316ff6;
+  height: 2em;
+  width: 2em;
+}
+#instagram {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
   color: white;
+  border-radius: 3px;
+  height: 2em;
+  width: 2em;
+}
+#twitter {
+  color: #1da1f2;
+  height: 2em;
+  width: 2em;
+}
+#googleplus {
+  color: #db4437;
+  height: 2em;
+  width: 2em;
+}
+#Youtube {
+  color: #ff0000;
+  height: 2em;
+  width: 2em;
+}
+.foot1 {
+  /* margin-right: 10%; */
+  justify-content: center;
+  width: 60%;
+  flex-grow: 1;
+}
+.foot {
+  display: grid;
+  place-items: center;
+  width: 50%;
+}
+.Subscribe {
+  display: flex;
+  flex-grow: 1;
+  padding-right: 5px;
+  width: 100%;
+  align-self: center;
+  margin: auto;
+}
+.Subscribe input[type="text"] {
+  /* flex-grow: 1; */
+  min-width: 200px;
+  /* width: 80%; */
+  margin-right: 0.1em;
+  padding-left: 15px;
+  width: 50%;
+  height: 2em;
+  border-radius: 20px;
+}
+.Subscribe button {
+  background-color: #003b73;
+  color: white;
+  padding: 0 0.5em 0 0.5em;
+  font-size: clamp(0.5em, 1em);
+  border-radius: 20px;
+  height: 2em;
 }
 
-.App-link {
-  color: #61dafb;
+.Socialmedia {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-between;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.Socialmedia svg {
+  margin-right: 0.5em;
+}
+@media (max-width: 830px) {
+  .Footer {
+    display: block;
+    margin: 0;
+    font-size: 1.5em;
   }
-  to {
-    transform: rotate(360deg);
+  .footal {
+    width: 100%;
+    align-content: center;
+    justify-content: space-between;
   }
+  .foot1 {
+    margin-bottom: 1em;
+    flex-grow: 2x;
+    width: 100%;
+    /* justify-content: space-between; */
+  }
+}
+.Cpolicy {
+  display: inline-block;
+  width: max-content;
 }
