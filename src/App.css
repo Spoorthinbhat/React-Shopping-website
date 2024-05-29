@@ -1,6 +1,7 @@
 * {
   padding: 0px;
   font-size: 1em;
+  box-sizing: border-box;
 }
 a {
   text-decoration: none;
@@ -15,6 +16,7 @@ a:hover {
 }
 .Header div {
   margin: auto;
+  /* margin-left: 5px; */
 }
 .icon {
   padding: 5px;
@@ -37,6 +39,7 @@ a:hover {
   width: 100vw;
   padding: 1em;
   box-sizing: border-box;
+  position: absolute;
 }
 .foot1 {
   flex-grow: 1;
@@ -247,12 +250,24 @@ a:hover {
   flex-shrink: 0;
   flex-grow: 1;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  /* justify-content: center; */
   align-items: center;
   font-size: 2rem;
   font-weight: bold;
+  justify-content: flex-end;
+  /* border-bottom: 1px grey solid; */
 }
-
+.slider-description p {
+  margin: 0;
+}
+#slider-description-title {
+  font-size: 2.3rem;
+}
+#slider-description-text {
+  font-size: 2rem;
+  font-weight: 400;
+}
 .explore {
   height: 50%;
   width: 100%;
@@ -261,6 +276,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
+  /* justify-content: flex-start; */
 }
 
 .slider-group {
@@ -268,8 +284,61 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: rgb(200, 221, 243); /*This is for the text to overlap*/
+}
+.Carousel-wrapper {
+  /* display: table; */
+  height: 51vh;
+  box-sizing: border-box;
+
+  width: 100%;
 }
 
+.container {
+  display: flex;
+  flex: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-text-size-adjust: none;
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.8);
+  transition: 0.5s ease-in-out;
+}
+.Card-active {
+  display: flex;
+
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: visible;
+}
+
+#left,
+#right {
+  position: absolute;
+  display: flex;
+  background-color: white;
+  transform: translate(0, 25vh);
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 55%;
+}
+
+#right:hover {
+  visibility: visible;
+}
+#left {
+  left: 15px;
+}
+#right {
+  right: 15px;
+}
 @media (max-width: 800px) {
   .slider {
     grid-template-columns: 1fr;
@@ -284,5 +353,9 @@ a:hover {
   .explore {
     visibility: hidden;
     font-size: 1.5rem;
+  }
+  .Carousel-wrapper {
+    height: 250px;
+    background-color: #db4437;
   }
 }

@@ -1,22 +1,29 @@
 export const SlideImage = [
   {
-    image: "/sliderPhotos/activewear.jpg",
-    title: "activewear",
+    image: "/sliderPhotos/sale.png",
+    title: "SALE",
+    text: "Min 50% Off",
   },
   {
     image: "/sliderPhotos/bags.jpg",
-    title: "bags",
+    title: "Tote bags",
+    text: "Min 60% Off",
   },
+
   {
-    images: "/sliderPhotos/menswatch.png",
+    image: "/sliderPhotos/menswatch.jpg",
     title: "menswatch",
+    text: "Min 40% Off",
   },
+
   {
-    images: "/sliderPhotos/sale.png",
-    title: "sale",
-  },
-  {
-    images: "/sliderPhotos/shoes.png",
+    image: "/sliderPhotos/shoes.jpg",
     title: "shoes",
+    text: "Min 30% Off",
+  },
+  {
+    image: "/sliderPhotos/activewear.jpg",
+    title: "ACTIVEWEAR",
+    text: "Min 45% Off",
   },
 ];

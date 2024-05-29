@@ -1,11 +1,16 @@
 import "./App.css";
-import Slider from "./Components/slider";
-// import SlideImage from "./SlideImage"
-
+// import Carousel from "./Components/carousel.js";
+import Carousell from "./Components/Carousell";
+import Footer from "./Footer";
+import Header from "./Header";
+import { SlideImage } from "./SlideImage";
 function App() {
   return (
     <div className="App">
-      <Slider></Slider>
+      <Header></Header>
+      <Carousell images={SlideImage}></Carousell>
+      <Footer></Footer>
+      {/* <Slider></Slider> */}
     </div>
   );
 }
