@@ -56,25 +56,32 @@ a:hover {
 }
 /* Header */
 .Header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
   padding: 1.5em 0 1.5em 0;
   /* border-bottom: 1px black solid; */
   font-size: 1.2em;
   font-weight: 600;
   box-shadow: 0px 16px 11px -6px rgba(0, 0, 0, 0.2);
+  margin-bottom: 3em;
+  background-color: white;
 }
 /* Header */
 .searchbox {
   width: 20%;
   border: 1px black solid;
-  padding-left: 5px;
-  background-color: gray;
+  /* padding-left: 5px; */
+  padding: 7px;
 }
 .searchbox input[type="text"] {
   width: 85%;
   border-style: none;
-  padding: 5px;
   height: 100%;
+  padding-left: 10px;
+  /* background-color: rgb(219, 204, 204); */
 }
+
 .searchbox input:focus {
   outline: none;
 }
@@ -175,13 +182,14 @@ a:hover {
 }
 
 .photocard {
-  height: 100vh;
+  height: 400px;
+  display: flex;
+  /* width: 200%; */
+  max-width: 700px;
+  min-width: 300px;
+  height: 40vh;
 }
-.card {
-  display: block;
-  width: 15%;
-  height: 40%;
-}
+
 .image-container {
   width: 100%;
   height: 100%;
@@ -199,7 +207,82 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 1em;
 }
 .text-overlay p {
   margin: 0;
+}
+.photobunch {
+  /* width: 100vh; */
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 0;
+}
+.displayheading {
+  margin: 3em 0 2.5em 0;
+  font-size: 3em;
+  padding-left: 1.3em;
+  font-weight: 400;
+}
+.slider {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  width: 100%;
+  height: 50vh;
+  min-height: 300px;
+}
+
+.slider-picture {
+  min-height: 200px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  flex-grow: 1;
+}
+
+.slider-description {
+  height: 50%;
+  width: 100%;
+  flex-shrink: 0;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.explore {
+  height: 50%;
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.slider-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .slider {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .slider-picture {
+    height: 300px;
+  }
+
+  .slider-description,
+  .explore {
+    visibility: hidden;
+    font-size: 1.5rem;
+  }
 }

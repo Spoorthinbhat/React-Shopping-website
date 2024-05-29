@@ -1,14 +1,11 @@
 import "./App.css";
-// import Footer from "./Footer";
-// import Header from "./Header";
-import Photocard from "./Components/photocard";
+import Slider from "./Components/slider";
+// import SlideImage from "./SlideImage"
 
 function App() {
   return (
     <div className="App">
-      {/* <Header></Header>
-      <Footer></Footer> */}
-      <Photocard></Photocard>
+      <Slider></Slider>
     </div>
   );
 }
