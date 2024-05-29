@@ -30,6 +30,17 @@ const Carousell = ({ images }) => {
       <div id="right" onClick={slideRight}>
         <FaArrowRight></FaArrowRight>
       </div>
+      <div className="Dot-container">
+        {images.map((_, index) => {
+          return (
+            <div
+              key={index}
+              onClick={() => setCurrent(index)}
+              className={current === index ? "Dot Dot-active" : "Dot"}
+            ></div>
+          );
+        })}
+      </div>
     </div>
   );
 };
