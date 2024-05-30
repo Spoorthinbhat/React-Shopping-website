@@ -6,19 +6,19 @@ export const SlideImage = [
   },
   {
     image: "/sliderPhotos/bags.jpg",
-    title: "Tote bags",
+    title: "TOTE BAGS",
     text: "Min 60% Off",
   },
 
   {
     image: "/sliderPhotos/menswatch.jpg",
-    title: "menswatch",
+    title: "MENS WATCH",
     text: "Min 40% Off",
   },
 
   {
     image: "/sliderPhotos/shoes.jpg",
-    title: "shoes",
+    title: "SHOES",
     text: "Min 30% Off",
   },
   {

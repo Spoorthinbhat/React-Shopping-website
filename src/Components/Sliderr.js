@@ -1,8 +1,22 @@
 const Sliderr = ({ images, index, current }) => {
+  //   const [autoplay, Setautoplay] = useState(true);
+  //   const slideRight = () => {
+  //     setCurrent(current == 4 ? 0 : current + 1);
+  //   };
+  //   let timeout = null;
+  //   useEffect(() => {
+  //     timeout =
+  //       autoplay &&
+  //       setTimeout(() => {
+  //         slideRight();
+  //       }, 3000);
+  //   });
   return (
     <div
       key={index}
       className={index === current ? "container Card-active" : "container"}
+      //   onMouseEnter={() => Setautoplay(false)}
+      //   onMouseLeave={() => Setautoplay(true)}
     >
       <div className="slider">
         <div

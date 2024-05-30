@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import Sliderr from "./Sliderr";
 
@@ -9,9 +9,12 @@ const Carousell = ({ images }) => {
   };
   const slideLeft = () => {
     setCurrent(current === 0 ? images.length - 1 : current - 1);
-    // setCurrent();
   };
-
+  useEffect(() => {
+    setTimeout(() => {
+      slideRight();
+    }, 20000);
+  });
   return (
     <div className="Carousel-wrapper">
       {images.map((image, index) => {
