@@ -7,9 +7,28 @@ a {
   text-decoration: none;
   color: black;
 }
+p {
+  margin: 0;
+}
 a:hover {
   text-decoration: underline;
 }
+.category-font {
+  font-size: 8em;
+  z-index: 800;
+  text-align: center;
+  /* font-family: "Playfair Display", serif; */
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  -webkit-text-stroke: 3px navy;
+  fill: none;
+  color: white;
+  stroke: red;
+  stroke-width: 0.5px;
+  stroke-linejoin: round;
+}
+
 .Header {
   display: flex;
   justify-content: space-around;
@@ -199,7 +218,7 @@ a:hover {
   z-index: 800;
 }
 .photocard:hover {
-  transform: scale(1.03);
+  transform: scale(1.02);
 }
 
 .image-container {
@@ -212,7 +231,7 @@ a:hover {
   justify-content: flex-end;
 }
 .text-overlay {
-  background-color: rgba(255, 0, 0, 0.566);
+  background-color: rgba(255, 0, 0, 0.837);
   color: white;
   padding: 10px;
   box-sizing: border-box;
@@ -223,6 +242,9 @@ a:hover {
 }
 .text-overlay p {
   margin: 0;
+}
+#product {
+  font-size: 1.5em;
 }
 #discount {
   font-weight: 800;
@@ -394,4 +416,72 @@ a:hover {
 }
 .Dot-active {
   background-color: rgb(67, 60, 200);
+}
+.Megaslider {
+  width: 100%;
+  height: 400px;
+  display: flex;
+}
+
+.Megaslider-photo {
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 20%;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.Megaslider-text {
+  background-color: aliceblue;
+  display: block;
+  height: fit-content;
+  width: 100%;
+  text-align: center;
+  margin: 0px 0.5em 0.5em 0.5em;
+  padding: 5px;
+  /* justify-content: ; */
+}
+.MCarousell {
+  width: 100%;
+  height: 400px;
+  flex-wrap: wrap;
+  overflow: hidden;
+  opacity: 0;
+  position: absolute;
+}
+.MCarousell-active {
+  width: 100%;
+  height: 400px;
+  flex-wrap: wrap;
+  overflow: hidden;
+  opacity: 1;
+  position: absolute;
+}
+#Mleft,
+#Mright {
+  position: absolute;
+  display: flex;
+  background-color: white;
+  transform: translate(0, 20vh);
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 55%;
+}
+#Mleft {
+  left: 10px;
+}
+#Mright {
+  right: 10px;
+}
+.MCarousel-wrapper {
+  margin: 5em 0 3em 0;
+  margin-top: 10em;
+  height: 400px;
+  box-sizing: border-box;
+  margin-bottom: 10em;
+  width: 100%;
 }

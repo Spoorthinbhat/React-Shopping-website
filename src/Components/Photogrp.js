@@ -1,5 +1,5 @@
-import Photocard from "./Components/photocard";
-import { DisplayPics } from "./DisplayPics";
+import { DisplayPics } from "../DisplayPics";
+import Photocard from "./photocard";
 
 const Photogrp = () => {
   return (
